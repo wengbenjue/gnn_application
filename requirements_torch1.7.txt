@@ -1,0 +1,9 @@
+torch==1.7.1
+torchvision==0.8.2
+torchaudio==0.7.2
+torch-scatter==2.0.6
+torch-sparse==0.6.9
+torch-cluster==1.5.9
+torch-spline-conv==1.2.1
+torch-geometric==1.7.2
+matplotlib==3.7.5

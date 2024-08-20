@@ -69,13 +69,15 @@ def train(dataset,train_loader, test_loader, args):
             loss.backward()
             opt.step()
             total_loss += loss.item() * batch.num_graphs
+
         total_loss /= len(loader.dataset)
         losses.append(total_loss)
 
         if epoch % 10 == 0:
             test_acc = test(test_loader, model)
             test_accs.append(test_acc)
-            print(test_acc)
+            # print(test_acc)
+            print("loss: {0},Val Acc: {1}".format(total_loss,test_acc))
         else:
             test_accs.append(test_accs[-1])
     return test_accs, losses
