@@ -15,8 +15,6 @@ import matplotlib.pyplot as plt
 def generate_and_save_data(num_nodes=100, num_edges=500, node_feature_path="node_features.npy",
                            edge_data_path="edge_data.npy"):
     """
-    生成模拟数据，包括节点特征和边的权重，并保存到文件。
-
     参数:
     - num_nodes: 节点数量
     - num_edges: 边的数量
